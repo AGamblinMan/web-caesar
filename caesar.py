@@ -1,3 +1,4 @@
+
 #returns alphabet position of a letter- assumes letter as input
 def alphabet_position(letter):
     #check for capitals
@@ -13,7 +14,7 @@ def rotate_character(char, rot):
     if char.isalpha():
         #uses modulo to rotate back to 'a' if needed, then adjusts letter case
         rotated = (alphabet_position(char) + rot) % 26 \
-                + ord(char) - alphabet_position(char)
+        + ord(char) - alphabet_position(char)
         #returns char associated with ordinal value calculated
         return chr(rotated)
     #if not a letter, returns as is

@@ -30,7 +30,7 @@ html_footer ="""
     </body>
 </html>
 """
-def build_page(textarea_content):
+def build_page(textarea_content=""):
     rot_label = "<label>Rotate By:</label>"
     input_rotation = "<input name='rotation' type='number' />"
 
